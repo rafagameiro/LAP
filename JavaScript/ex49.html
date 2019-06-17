@@ -1,0 +1,37 @@
+<HTML>
+
+<HEAD>
+<TITLE>MyDocument</TITLE>
+
+<SCRIPT>
+function runForm3(form, search) {
+    var url = form.url.value;
+    if( url == "" )
+        alert("Error: Empty search");
+    else
+        document.location = search+url;
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<H1>Search</H1>
+<FORM NAME="form3">
+    Enter Text in English: <INPUT TYPE="text" NAME="url" SIZE=40>
+    <P><INPUT TYPE="button" NAME="button1" VALUE="Google" ONCLICK="runForm3(form, 'http://www.google.com/search?q=')">
+    <INPUT TYPE="button" NAME="button2" VALUE="Wikipedia" ONCLICK="runForm3(form, 'http://en.wikipedia.org/wiki/')">
+    <INPUT TYPE="button" NAME="button3" VALUE="Dictionary" ONCLICK="runForm3(form, 'http://www.thefreedictionary.com/')">
+    <INPUT TYPE="button" NAME="button4" VALUE="Thesaurus" ONCLICK="runForm3(form, 'http://thesaurus.com/browse/')">
+    <INPUT TYPE="button" NAME="button5" VALUE="Images" ONCLICK="runForm3(form, 'https://www.google.com/search?tbm=isch&source=hp&biw=960&bih=937&q=')">
+    <INPUT TYPE="button" NAME="button6" VALUE="Twitter" ONCLICK="runForm3(form, 'http://twitter.com/')">
+    <INPUT TYPE="button" NAME="button7" VALUE="Youtube" ONCLICK="runForm3(form, 'https://www.youtube.com/results?search_query=')">
+    </br>
+    <INPUT TYPE="button" NAME="button8" VALUE="Portuguese" ONCLICK="runForm3(form, 'http://translate.google.com/?langpair=en|pt&text=')">
+    <INPUT TYPE="button" NAME="button9" VALUE="French" ONCLICK="runForm3(form, 'http://translate.google.com/?langpair=en|fr&text=')">
+    <INPUT TYPE="button" NAME="button10" VALUE="Japanese" ONCLICK="runForm3(form, 'http://translate.google.com/?langpair=en|ja&text=')">
+    <INPUT TYPE="button" NAME="button11" VALUE="Xhosa" ONCLICK="runForm3(form, 'http://translate.google.com/?langpair=en|xh&text=')">
+    <INPUT TYPE="button" NAME="button12" VALUE="Swahili" ONCLICK="runForm3(form, 'http://translate.google.com/?langpair=en|sw&text=')">
+</FORM>
+</BODY>
+
+</HTML>

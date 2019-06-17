@@ -1,0 +1,59 @@
+<HTML>
+
+<HEAD>
+<TITLE>MyDocument</TITLE>
+
+<SCRIPT TYPE="text/javascript">
+	
+function generatePrimes(n) {
+	var primes = [];
+	var c = [];
+	for(var i = 2; i <= n;i++)
+		c[i] = true;
+		
+	for(var i = 2; i <= n;i++) {
+		if(c[i]){
+			primes.push(i);
+			for(var j = 2*i; j <= n; j+=i)
+				c[j] = false;
+		}
+	}
+		
+	return primes;
+}	
+	
+/*	
+function generatePrimes(n) {
+    var res = [];
+    var start = [];
+    for(var i = 1; i < n;i++){
+		start.push(i);
+	}
+	var curr = start[0];
+	while(curr < n){
+		for(var i = curr+1; i < start.length;i++)
+			var val = start.pop(i);
+			if(val%curr != 0 && !res.includes(val))
+				res.push(val);
+		curr++;
+	}
+		
+	return res;
+}
+*/
+function runForm1(form) {
+    form.text2.value = generatePrimes(parseInt(form.text1.value));
+}
+</SCRIPT>
+</HEAD>
+
+<BODY>
+<H1>Eratosthenes</H1>
+<FORM NAME="form1">
+     Generate primes until: <INPUT TYPE="text" NAME="text1" VALUE="0" SIZE=10 style="text-align: right">
+     </br><textarea NAME="text2" rows="10" cols="50"></textarea>
+	 <p> <INPUT TYPE="button" NAME="button1" VALUE="Generate" ONCLICK="runForm1(form)">
+</FORM>
+</BODY>
+
+</HTML>

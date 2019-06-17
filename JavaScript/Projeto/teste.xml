@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LANGUAGE>
+  <LANGNAME>Portuguese</LANGNAME>
+  <CLASS>Language</CLASS>
+  <SOUNDSPREFIX>http://ctp.di.fct.unl.pt/miei/lap/projs/proj2018-3/files/resources/sounds/</SOUNDSPREFIX>
+  <LESSON ID="1">
+	<BLOCKS>
+       <PROMPT>Write this in Portuguese</PROMPT>
+       <ORIGINAL>Um, excuse me, where is the bathroom?</ORIGINAL>
+       <BLOCKS>desculpe-me, Hum, onde a banho praia de avião casa é habitar</BLOCKS>
+       <SOLUTION>Hum, desculpe-me, onde é a casa de banho</SOLUTION>
+    </BLOCKS>
+    <KEYBOARD>
+       <PROMPT>Write this in English</PROMPT>
+       <ORIGINAL>bom dia</ORIGINAL>
+       <TRANSLATION>good morning</TRANSLATION>
+       <SOUND>portuguese/sounds/bom dia.mp3</SOUND>
+    </KEYBOARD>
+   </LESSON>
+</LANGUAGE>
